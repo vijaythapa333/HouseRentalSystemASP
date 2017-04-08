@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="HouseRentalSystem.AdminMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="VIJAY THAPA" />
+        <meta name="description" content="HOUSE RENTAL SYSTEM" />
+        <meta name="keywords" content="Give Your Keywords for SEO" />
+        
+        <title>HOUSE RENTAL SYSTEM</title>
+        <!--ADING CSS HERE-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+        
+        <!--Resource Files for Slider-->
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="../assets/slider/engine1/style.css"/>
+        <script type="text/javascript" src="../assets/slider/engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+    </head>
+    
+    <body>
+        <!--Header Starts HERE-->
+        <header class="header">
+            <div class="wrapper">
+                <h1>HOUSE RENTAL SYSTEM | ADMIN PANEL</h1>
+            </div>
+            
+        </header>
+        <!--Header Ends HERE-->
+        
+        <!--Menu Starts HERE-->
+        <nav class="menu">
+            <div class="wrapper">
+                <ul>
+                    <a href="Dashboard.aspx"><li>Dashboard</li></a>
+                    <a href="Users.aspx"><li>Users</li></a>
+                    <a href="Houses.aspx"><li>Houses</li></a>
+                    <a href="Bookings.aspx"><li>Bookings</li></a>
+                    <a href="LogOut.aspx"><li>Log Out</li></a>
+                </ul>
+            </div>
+        </nav>
+        <!--Menu Ends HERE-->
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+<!--Footer Starts HERE-->
+        <footer class="footer">
+            <div class="wrapper">
+                <p>&copy; <a href="#">House Rental System</a>. All rights reserved 2017.</p>
+            </div>
+        </footer>
+        <!--Footer Ends HERE-->
+    </body>
+</html>

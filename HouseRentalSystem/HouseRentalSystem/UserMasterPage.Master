@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMasterPage.master.cs" Inherits="HouseRentalSystem.UserMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="VIJAY THAPA" />
+        <meta name="description" content="HOUSE RENTAL SYSTEM" />
+        <meta name="keywords" content="Give Your Keywords for SEO" />
+        
+        <title>HOUSE RENTAL SYSTEM</title>
+        <!--ADING CSS HERE-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+        
+        <!--Resource Files for Slider-->
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="../assets/slider/engine1/style.css"/>
+        <script type="text/javascript" src="../assets/slider/engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+    </head>
+    
+    <body>
+        <!--Header Starts HERE-->
+        <header class="header">
+            <div class="wrapper">
+                <h1>HOUSE RENTAL SYSTEM</h1>
+            </div>
+            
+        </header>
+        <!--Header Ends HERE-->
+        
+        <!--Menu Starts HERE-->
+        <nav class="menu">
+            <div class="wrapper">
+                <ul>
+                    <a href="Home.aspx"><li>Home</li></a>
+                    <a href="About.aspx"><li>About Us</li></a>
+                    <a href="#"><li>Houses</li></a>
+                    <a href="Contact.aspx"><li>Contact Us</li></a>
+                    <a href="Login.aspx"><li>Log In</li></a>
+                </ul>
+            </div>
+        </nav>
+        <!--Menu Ends HERE-->
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<!--Footer Starts HERE-->
+        <footer class="footer">
+            <div class="wrapper">
+                <p>&copy; <a href="#">House Rental System</a>. All rights reserved 2017.</p>
+            </div>
+        </footer>
+        <!--Footer Ends HERE-->
+    </body>
+</html>
