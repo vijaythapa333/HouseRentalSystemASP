@@ -37,7 +37,7 @@
                     <a href="Users.aspx"><li>Users</li></a>
                     <a href="Houses.aspx"><li>Houses</li></a>
                     <a href="Bookings.aspx"><li>Bookings</li></a>
-                    <a href="LogOut.aspx"><li>Log Out</li></a>
+                    <a href="Logout.aspx"><li>Log Out</li></a>
                 </ul>
             </div>
         </nav>

@@ -99,6 +99,7 @@
     <Content Include="admin\Bookings.aspx" />
     <Content Include="admin\Dashboard.aspx" />
     <Content Include="admin\Houses.aspx" />
+    <Content Include="admin\Logout.aspx" />
     <Content Include="admin\Users.aspx" />
     <Content Include="pages\About.aspx" />
     <Content Include="pages\Book.aspx" />
@@ -177,6 +178,13 @@
     </Compile>
     <Compile Include="admin\Houses.aspx.designer.cs">
       <DependentUpon>Houses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>

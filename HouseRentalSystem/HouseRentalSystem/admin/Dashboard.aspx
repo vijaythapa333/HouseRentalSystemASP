@@ -11,7 +11,9 @@
                 <div class="clearfix">
                     
                     <div class="houses">
-                         <h1>1000</h1>
+                         <h1>
+                             <asp:Label ID="lblHouses" runat="server" Text="0"></asp:Label>
+                         </h1>
                         <span class="house-title">Houses</span><br />
                         <a href="Houses.aspx">
                             <button type="button" class="btn-book" >View All</button>
@@ -19,7 +21,9 @@
                     </div>
                     
                     <div class="houses">
-                         <h1>100</h1>
+                         <h1>
+                             <asp:Label ID="lblUsers" runat="server" Text="0"></asp:Label>
+                         </h1>
                         <span class="house-title">Users</span><br />
                         <a href="Users.aspx">
                             <button type="button" class="btn-book" >View All</button>
@@ -27,7 +31,9 @@
                     </div>
 
                     <div class="houses">
-                         <h1>340</h1>
+                         <h1>
+                             <asp:Label ID="lblBookings" runat="server" Text="0"></asp:Label>
+                         </h1>
                         <span class="house-title">Bookings</span><br />
                         <a href="Bookings.aspx">
                             <button type="button" class="btn-book" >View All</button>

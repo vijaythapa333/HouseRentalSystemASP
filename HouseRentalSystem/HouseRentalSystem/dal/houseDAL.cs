@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -275,6 +276,50 @@ namespace HouseRentalSystem.dal
         //    SqlConnection conn = new SqlConnection(myconnstr);
         //    string HouseName;
         //}
+        #endregion
+        #region Get Total Houses
+        public int TotalHouses()
+        {
+            //STep 1: Create SQL Connection
+            SqlConnection conn = new SqlConnection(myconnstr);
+
+            //Create an Integer to return Stock
+            int Houses = 0;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                //Write TSQL to get all users
+                string sql = "SELECT house_id FROM tbl_house";
+                //Create SQL Command using sql and conn
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //Create SQL Data Adapter using cmd
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                //Open Connection
+                conn.Open();
+
+                //FIll dt using adapter
+                adapter.Fill(dt);
+                //Get Total Number of Users from datatable dt
+                if (dt.Rows.Count > 0)
+                {
+                    Houses = dt.Rows.Count;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                //Close Connection
+                conn.Close();
+            }
+
+            return Houses;
+        }
         #endregion
     }
 }

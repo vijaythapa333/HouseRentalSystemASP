@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HouseRentalSystem.dal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,13 @@ namespace HouseRentalSystem.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            userDAL Users = new userDAL();
+            houseDAL Houses = new houseDAL();
+            bookingDAL Bookings = new bookingDAL();
 
+            lblHouses.Text = Houses.TotalHouses().ToString();
+            lblUsers.Text = Users.TotalUsers().ToString();
+            lblBookings.Text = Bookings.TotalBookings().ToString();
         }
     }
 }

@@ -8,17 +8,19 @@
                 <!--Contact Detail Entry-->
                 <div class="booking-details">
                     <h3>Log In</h3>
-                    <form>
+                    <asp:Label ID="lblResult" runat="server" ForeColor="Maroon"></asp:Label><br />
                         <span class="name">Username</span>
-                        <input type="text" name="username" placeholder="Username Please" required="true" /><br />
+                        <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+                        <br />
                         
                         <span class="name">Password</span>
-                        <input type="password" name="password" placeholder="Password Please" required="true" /><br />
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                        <br />
                         
-                        <input type="submit" name="submit" placeholder="LOG IN" />
-                        <input type="reset" name="reset" placeholder="RESET" /><br />
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 
+                        <asp:Button ID="btnLogin" runat="server" Text="Log In" BackColor="#006600" BorderColor="#006600" ForeColor="White" Height="44px" Width="495px" OnClick="btnLogin_Click" />
+                        <br />
                         <a href="index.html">Go Home</a>
-                    </form>
                 </div>
             </div>
         </div>
